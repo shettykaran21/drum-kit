@@ -112,7 +112,7 @@ kbd {
   animation: shake 0.3s ease-out 3 alternate;
 }
 
-@keyframes shake {
+/* @keyframes shake {
   0% {
     transform: rotate(0deg);
   }
@@ -127,5 +127,28 @@ kbd {
   }
   100% {
     transform: rotate(0deg);
+  }
+} */
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(3px, 0, 0);
   }
 }
