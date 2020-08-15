@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* ----Global---- */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6rem;
+  background-color: #e9e9e9;
+}
+
+/* ----Utilities---- */
+.u-container {
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+  overflow: hidden;
+}
+
+/* ------------Main------------ */
+.main {
+  min-height: 100vh;
+}
+/* ----Band---- */
+.band {
+  display: flex;
+  justify-content: center;
+  padding: 7rem 0;
+}
+
+.band__img {
+  height: 40rem;
+}
+
+/* ----Keys---- */
+.keys {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.5rem;
+  margin: 3rem 1rem;
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+}
+
+.playing {
+  transform: scale(1.1);
+  box-shadow: 0 1rem 2rem rgb(0, 48, 114, 0.4);
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+  color: #003072;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #003072;
+}
+
+/* ----Footer---- */
+.footer {
+  height: 10rem;
+  color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid #dbdbdb;
+}
+.footer__social {
+  display: flex;
+  gap: 1.5rem;
+}
+.footer__link {
+  color: #1e1e1e;
+}
+.footer__icon {
+  cursor: pointer;
+}
+.footer__icon--heart {
+  color: #f83a60;
+  margin: 0 0.5rem;
+}
