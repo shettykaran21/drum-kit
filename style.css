@@ -22,7 +22,7 @@ body {
 
 /* ----Utilities---- */
 .u-container {
-  max-width: 110rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 0 3rem;
   overflow: hidden;
@@ -48,6 +48,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .key {
@@ -104,4 +105,27 @@ kbd {
 .footer__icon--heart {
   color: #f83a60;
   margin: 0 0.5rem;
+}
+
+/* ----SVG Animation---- */
+.animate {
+  animation: shake 0.3s ease-out 3 alternate;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
